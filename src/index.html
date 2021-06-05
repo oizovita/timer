@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">Timer</h1>
+    <div class="timer" id="timer">
+      <h2 class="text">Укажите время в минутах</h2>
+      <div class="settings">
+        <button type="button" class="bt_minus" id="minus">
+          <svg viewBox="0 0 24 24">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        </button>
+        <input
+          type="text"
+          value="1"
+          size="2"
+          class="number"
+          id="number"
+          data-max-count="20"
+          disabled
+        />
+        <button type="button" class="bt_plus" id="plus">
+          <svg viewBox="0 0 24 24">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        </button>
+      </div>
+      <button type="button" class="start" id="start">
+        <span class="start_text">start</span>
+      </button>
+    </div>
+
+    <div class="countdown" id="countdown">
+      <h2 class="countdown_text">Осталось</h2>
+      <input
+        type="text"
+        size="2"
+        class="countdown_number"
+        id="countdown_number"
+        data-max-count="20"
+        disabled
+      />
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>

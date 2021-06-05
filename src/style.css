@@ -1,0 +1,97 @@
+.timer,
+.title,
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text,
+.countdown_text {
+  margin-top: 50px;
+}
+
+.settings * {
+  box-sizing: border-box;
+}
+
+.settings {
+  display: flex;
+  justify-content: center;
+}
+
+.settings .bt_minus,
+.settings .bt_plus,
+.settings .number {
+  color: #bfe2ff;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  margin: 10px 2px;
+  border-radius: 10px;
+  border: 4px solid #bfe2ff;
+  background: #337ab7;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.countdown_number {
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+  border: 4px solid #bfe2ff;
+  background: #337ab7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 18px;
+  color: #bfe2ff;
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.start {
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+  border: 4px solid #bfe2ff;
+  background: #337ab7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 18px;
+  color: #bfe2ff;
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.settings .number {
+  width: 50px;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.settings .bt_minus svg,
+.settings .bt_plus svg {
+  stroke: #bfe2ff;
+  stroke-width: 4;
+  transition: 0.5s;
+  margin: 4px;
+}
+
+.settings .bt_minus:hover svg,
+.settings .bt_plus:hover svg {
+  stroke: #fff;
+}
+
+.start:hover .start_text {
+  color: #fff;
+}
+
+.timer {
+  display: flex;
+}
+
+.countdown {
+  display: none;
+}
